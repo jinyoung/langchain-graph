@@ -20,3 +20,11 @@ docker run \
     -e NEO4J_PLUGINS=\[\"apoc\"\]  \
     neo4j:latest
 ```
+
+
+For debug mode:
+
+```
+handler = StdOutCallbackHandler()
+chain.run(... , callbacks=[handler])
+```
